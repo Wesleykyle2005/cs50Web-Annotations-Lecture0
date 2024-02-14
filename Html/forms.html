@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+</head>
+<body>
+    <!-- Formulario de contacto -->
+    <form action="/submit" method="post">
+        <!-- Input de texto con valor inicial -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="John Doe" placeholder="Ingrese su nombre" required>
+        <br>
+        
+        <!-- Área de texto con valor inicial -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escriba su mensaje aquí" required>¡Hola mundo!</textarea>
+        <br>
+        
+        <!-- Input de correo electrónico con valor inicial -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" value="correo@example.com" placeholder="Ingrese su correo electrónico" required>
+        <br>
+        
+        
+                <!-- Input de tipo color -->
+        <label for="rad">Radios:</label>
+        <input type="radio" value="red" id="rad">Red
+        <br>
+        
+        <label for="data">Opciones de sugerencia de una lista de datos:</label>
+        <input name="dat" list="datos">
+        <datalist id="datos">
+          <option value="dato1">
+          <option value="dato2">
+          <option value="za">
+          <option value="zb">
+        </datalist>
+        
+        <br>
+        
+        
+        
+                        <!-- Input de tipo color -->
+        <label for="color">Color:</label>
+        <input type="color" value="#ffff00" id="color">Red
+        <br>
+        
+                        <!-- Input de tipo contraseña-->
+        <label for="contra">Contraseña:</label>
+        <input type="password" id="contra">
+        <br>
+        
+        <!-- Input de número con valor inicial y límites -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" value="25" min="18" max="100" required>
+        <br>
+        
+        <!-- Input de fecha con valor inicial -->
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="1999-01-01" required>
+        <br>
+        
+        <!-- Input de selección de archivo -->
+        <label for="archivo">Seleccione un archivo:</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx" required>
+        <br>
+        
+        <!-- Input de radio con opción preseleccionada -->
+        <fieldset>
+            <legend>Preferencias de género:</legend>
+            <input type="radio" id="masculino" name="genero" value="masculino" checked>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label>
+        </fieldset>
+        <br>
+        
+        <!-- Input de selección múltiple -->
+        <label for="intereses">Intereses:</label>
+        <select id="intereses" name="intereses" multiple required>
+            <option value="programacion">Programación</option>
+            <option value="diseño">Diseño</option>
+            <option value="musica">Música</option>
+            <option value="deportes">Deportes</option>
+        </select>
+        <br>
+        
+        <!-- Input de checkbox preseleccionado -->
+        <label for="suscripcion">Suscribirse al boletín:</label>
+        <input type="checkbox" id="suscripcion" name="suscripcion" unchecked>
+        <br>
+        
+        <!-- Input de rango con valor inicial y límites -->
+        <label for="nivel">Nivel de experiencia:</label>
+        <input type="range" id="nivel" name="nivel" value="50" min="0" max="100" step="1" required>
+        <br>
+        
+        <!-- Input oculto -->
+        <input type="hidden" name="id_usuario" value="123456">
+        
+        <!-- Botón de enviar -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
