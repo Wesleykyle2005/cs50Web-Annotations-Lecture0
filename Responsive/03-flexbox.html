@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex; /* Establece el contenedor como un flex container */
+            justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+            align-items: center; /* Centra los elementos verticalmente */
+            height: 200px; /* Altura del contenedor */
+            background-color: lightgray; /* Color de fondo del contenedor */
+        }
+
+        .item {
+            width: 100px; /* Ancho de los elementos */
+            height: 100px; /* Altura de los elementos */
+            background-color: lightblue; /* Color de fondo de los elementos */
+            border: 1px solid darkblue; /* Borde de los elementos */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Primer elemento</div>
+        <div class="item">Segundo elemento</div>
+        <div class="item">Tercer elemento</div>
+    </div>
+</body>
+</html>

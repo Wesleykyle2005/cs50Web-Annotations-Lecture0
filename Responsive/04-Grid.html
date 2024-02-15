@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        /* Definición del grid container */
+        .container {
+            display: grid; /* Establece el contenedor como un grid container */
+            grid-template-columns: 100px 100px 100px; /* Define tres columnas de 100px de ancho cada una */
+            grid-template-rows: auto; /* Define filas automáticas, que se ajustan según el contenido */
+            gap: 10px; /* Espacio entre las celdas del grid */
+        }
+
+        /* Estilos de los items */
+        .item {
+            background-color: lightblue; /* Color de fondo de los items */
+            padding: 20px; /* Espacio interno de los items */
+            border: 1px solid darkblue; /* Borde de los items */
+            text-align: center; /* Alineación del texto en el centro */
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid container -->
+    <div class="container">
+        <!-- Item 1 -->
+        <div class="item">1</div>
+        <!-- Item 2 -->
+        <div class="item">2</div>
+        <!-- Item 3 -->
+        <div class="item">3</div>
+        <!-- Item 4 -->
+        <div class="item">4</div>
+        <!-- Item 5 -->
+        <div class="item">5</div>
+        <!-- Item 6 -->
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
