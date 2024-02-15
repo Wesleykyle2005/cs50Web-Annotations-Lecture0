@@ -6,7 +6,7 @@
     <title>Ejemplo de Formulario</title>
 </head>
 <body>
-    <!-- Formulario de contacto -->
+
     <form action="/submit" method="post">
         <!-- Input de texto con valor inicial -->
         <label for="nombre">Nombre:</label>
@@ -29,6 +29,7 @@
         <input type="radio" value="red" id="rad">Red
         <br>
         
+         <!-- sugerencia de datos -->
         <label for="data">Opciones de sugerencia de una lista de datos:</label>
         <input name="dat" list="datos">
         <datalist id="datos">
@@ -40,6 +41,11 @@
         
         <br>
         
+        
+                       <!-- Input de telefono -->
+        <label for="tel-for">Telefono:</label>
+        <input type="tel" name="tel-for"  required>
+        <br>
         
         
                         <!-- Input de tipo color -->
@@ -61,6 +67,34 @@
         <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
         <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="1999-01-01" required>
         <br>
+        
+             <!-- Input de tiempo -->
+        <label for="time-for">Tiempo:</label>
+        <input type="time" name="time-for"  required>
+        <br>
+        
+                     <!-- Input de Fecha y hora -->
+        <label for="dat-for">Fecha y hora:</label>
+        <input type="datetime-local" name="dat-for"  required>
+        <br>
+        
+        
+          <!-- Input de Semana -->
+        <label for="week-for">Semana:</label>
+        <input type="week" name="week-for"  required>
+        <br>
+        
+                  <!-- Input de Mes -->
+        <label for="month-for">Mes:</label>
+        <input type="month" name="month-for"  required>
+        <br>
+        
+                        <!-- Input de url -->
+        <label for="url-for">Url:</label>
+        <input type="url" name="url-for"  required>
+        <br>
+        
+        
         
         <!-- Input de selección de archivo -->
         <label for="archivo">Seleccione un archivo:</label>
@@ -104,6 +138,7 @@
         
         <!-- Botón de enviar -->
         <button type="submit">Enviar</button>
+         <button type="reset">Reset</button>
     </form>
 </body>
 </html>
