@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Pseudo-elementos CSS</title>
+    <style>
+        /* Estilo para insertar contenido antes de un elemento */
+        p::before {
+            content: "Antes del párrafo: ";
+            color: blue;
+        }
+
+        /* Estilo para la primera letra de un elemento */
+        p::first-letter {
+            font-size: 150%;
+            color: red;
+        }
+
+        /* Estilo para la primera línea de un elemento */
+        p::first-line {
+            font-weight: bold;
+        }
+
+        /* Estilo para el texto seleccionado por el usuario */
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* Estilo para insertar contenido después de un enlace */
+        a::after {
+            content: " (enlace)";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  
+    <p>Esta es una muestra de texto para demostrar el uso de pseudo-elementos CSS.</p>
+    <p>El primer párrafo tiene estilos aplicados a la primera letra y la primera línea.</p>
+    <a href="#">Este es un enlace</a>
+</body>
+</html>

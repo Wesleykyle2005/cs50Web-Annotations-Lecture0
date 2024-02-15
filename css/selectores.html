@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Selectores CSS con Estilos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Estilos para los ejemplos */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* 1. a,b: Estilos para párrafos y divs */
+        p, div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* 2. a b: Estilos para listas dentro de divs */
+        div ul li {
+            color: blue;
+        }
+
+        /* 3. a > b: Estilos solo para párrafos directamente dentro de divs */
+        div > p {
+            font-weight: bold;
+        }
+
+        /* 4. a[atributo]: Estilos para inputs con atributos type */
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        /* 5. button:hover: Estilos al pasar el mouse sobre botones */
+        button:hover {
+            background-color: lightblue;
+            color: white;
+        }
+
+        /* 6. a + b: Estilos para el segundo párrafo después de otro párrafo */
+        p + p {
+            text-transform: uppercase;
+        }
+
+        /* 7. [a=b]: Estilos para divs con atributo a="b" */
+        div[a="b"] {
+            color: green;
+        }
+
+        /* 8. a:b: Estilos para párrafos con clase "highlight" */
+        p.highlight {
+            font-style: italic;
+        }
+
+        /* 9. a :: b: Estilos para párrafos dentro de divs */
+        div p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">1. Este párrafo tiene clase "highlight"</p>
+    <div>1. Este es un div</div>
+    
+    <div>
+        <ul>
+            <li>2. Elemento de lista 1</li>
+            <li>2. Elemento de lista 2</li>
+        </ul>
+    </div>
+    
+    <div>
+        <p class="highlight">3. Soy el primer párrafo</p>
+        <div>
+            <p class="highlight">3. Soy el segundo párrafo, hijo directo del div anterior</p>
+        </div>
+    </div>
+    
+    <input type="text" placeholder="4. Este es un input">
+    
+    <button onmouseover="this.style.backgroundColor='red'" onmouseout="this.style.backgroundColor=''">5. Pasa el mouse sobre mí</button>
+    
+    <p>6. Este es el primer párrafo</p>
+    <p class="highlight">6. Este es el segundo párrafo, inmediatamente después del primero</p>
+    
+    <div a="b">7. Este div tiene el atributo "a" con valor "b"</div>
+    
+    <p class="highlight">8. Este párrafo tiene clase "highlight"</p>
+    
+    <div>
+        <p class="highlight">9. Este es un párrafo dentro de un div</p>
+    </div>
+</body>
+</html>
